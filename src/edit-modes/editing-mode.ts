@@ -261,6 +261,7 @@ export default class EditingMode extends BaseMode {
   }
 
   _getCursorEditHandle = (event: PointerMoveEvent, feature: Feature) => {
+    event = event || {} as any
     // @ts-ignore
     const { isDragging, picks } = event;
     // if not pick segment

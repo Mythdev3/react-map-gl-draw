@@ -254,6 +254,7 @@ var EditingMode = /*#__PURE__*/function (_BaseMode) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "_getCursorEditHandle", function (event, feature) {
+      event = event || {}
       // @ts-ignore
       var isDragging = event.isDragging,
           picks = event.picks; // if not pick segment
